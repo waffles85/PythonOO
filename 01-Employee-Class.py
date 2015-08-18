@@ -32,3 +32,11 @@ print getattr(e1,'Bonus')
 'hassttr checks if object has attribute'
 print hasattr(e1,'Bonus')
 print hasattr(e1,'NoBonus')
+
+'setattr sets attribute value'
+setattr(e1,'Bonus', 0.23)
+print getattr(e1,'Bonus')
+
+'delattr deletes attribute'
+delattr(e1, 'Bonus')
+print getattr(e1,'Bonus')
