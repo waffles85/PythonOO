@@ -12,9 +12,23 @@ class Employee:
         self.BaseSalary = BaseSalary
         self.Bonus = Bonus
         self.CareerLevel = CareerLevel
+        Employee.empCount += 1
 
     def displayCount(self):
         print 'The number of employees is %d' % Employee.empCount
 
     def displayEmployeeDetails(self):
         print 'Employee Name :' + self.EmplName
+        print 'Salary: %d' %self.BaseSalary
+
+'Instantiates e1, sets details'
+e1 = Employee('Jim',CareerLevel = 4, BaseSalary = 19000, Bonus = 0.15)
+e1.displayEmployeeDetails()
+e1.displayCount()
+
+'getattr can get attributes of an object'
+print getattr(e1,'Bonus')
+
+'hassttr checks if object has attribute'
+print hasattr(e1,'Bonus')
+print hasattr(e1,'NoBonus')
