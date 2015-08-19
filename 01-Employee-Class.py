@@ -49,19 +49,20 @@ print hasattr(e1,'Bonus')
 There are a number of built-in method in any class
 __dict__ is the name space of the class
 '''
-#print "e1.__dict__ : " + str(e1.__dict__)
+print "e1.__dict__ : " + str(e1.__dict__)
 
 #__doc__ os the doc string
-#print "e1.__doc__ : " + str(e1.__doc__)
+print "e1.__doc__ : " + str(e1.__doc__)
 
 #__name__ is the class name
-#print "e1.__name__ : " + str(Employee.__name__)
+print "e1.__name__ : " + str(Employee.__name__)
 
 # __bases__ is a tuple containing base classes, in order of their occurance
-# print e1.__class__.__bases__
+print 'e1.__class__.__bases__ : ' + str(e1.__class__.__bases__)
 
 # __module__ module name in which the class is defined
-# print e1.__module__
+print 'e1.__module__ : %' + e1.__module__
 
+print Employee
 
 
